@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>LINE Dict</title>
+    <link rel="stylesheet" type="text/css" href="css/sougou.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="logo">
+            <a href="sougou.html"><img src="img/header_linedict.png"></a>
+        </div>
+        <div class="search">
+            <div class="search-container">
+                <form action="">
+                    <input type="radio" name="choose" value="word" checked="checked">单词&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input type="radio" name="choose" value="sentence">例句&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input type="text" name="language">
+                    <input type="image" src="img/write.png" alt="Write">
+                    <input type="image" src="img/search.png" alt="Search">
+                </form>
+            </div> 
+            <div class="login">
+                <a href="#">
+                    <p class="login-button">登录</p>
+                </a>
+            </div>
+        </div>
+    </header>
+    <nav class="sidebar">
+        <div class="sidebar-top">
+            <div class="top-menu">
+                <a href="#">&nbsp;&nbsp;&nbsp;&nbsp;词典</a>
+                <a href="#">&nbsp;&nbsp;&nbsp;&nbsp;翻译器</a>
+                <a href="#">&nbsp;&nbsp;&nbsp;&nbsp;今日会话</a>
+            </div>
+        </div>
+        <div class="setting">
+            <div class="middle-menu">
+                <div class="set-button" onclick="showset()">设定<img id="icon-set" src="img/icon_down.png">
+                </div>
+                <div class="setting-menu">
+                    <div class="set">
+                        <input type="checkbox" name="set1">设定1</div>
+                    <div class="set">
+                        <input type="checkbox" name="set1">设定2</div>
+                    <div class="set">
+                        <input type="checkbox" name="set1">设定3</div>
+                </div>
+            </div>
+        </div>
+        <div class="aboutus">
+            <div class="middle-menu">
+                <div class="set-button" onclick="showmore()">LINE词典官方账号<img id="icon-ab" src="img/icon_down.png">
+                </div>
+                <div class="aboutus-menu">
+                    <div class="more">官方APP</div>
+                    <div class="more">官方微博</div>
+                    <div class="more">官方公众号</div>
+                </div>
+            </div>
+        </div>
+        <div class="message">
+            <div class="middle-menu">
+                <p>通知</p>
+                <div class="news"><a href="#">LINE汉英词典（PC版本）已更新。</a></div>
+            </div>
+        </div>
+        <div class="sidebar-bottom">
+            <div class="sidebar-dic">
+                <p>LINE词典</p>
+                <div class="dic"><a href="#">英语→汉语</a></div>
+                <div class="dic"><a href="#">英语→泰语</a></div>
+            </div>
+        </div>
+        <div class="side-button">
+            <div class="arrow"></div>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="l-container">
+            <img class="pic-fighting" src="img/pic_FightingMan.png">
+            <div class="today-talk">
+                <p>今日会话</p>
+                <p class="bigp">你有什么需要的?</p>
+                <p>Is there anything you need?</p><img src="img/speech.png">
+                <div><a href="#">查看更多</a></div>
+            </div>
+            <div class="lm-container">
+                <div class="today-say">
+                    <p>今日名言</p>
+                    <p class="bigp">读书破万卷，下笔如有神。&nbsp;&nbsp;&nbsp;&nbsp;—杜甫</p><img src="img/speech.png">
+                    <p>Dúshū pò wàn juǎn, xiàbǐ rú yǒu shén.</p>
+                    <p>Having pored over ten thousand volumes,one can write with godly power.</p>
+                    <div><a href="#">查看更多</a></div>
+                </div>
+            </div>
+            <div class="data">
+                <p>数据提供 <b> Collins</b></p>
+            </div>
+            <p class="share">分享LINE词典</p>
+            <a href=""><img class="fb" src="img/facebook.png"><img class="tt" src="img/twitter.png"><img class="gg" src="img/google.png"></a>
+        </div>
+        <div class="r-container">
+            <a href=""><img class="pic-line" src="img/pic_linedict.png"></a>
+            <h5>单词卡</h5>
+            <p>目前没有单词</p>
+            <a href=""><img class="pic-lined" src="img/pic_linedictdownload.png"></a>
+        </div>
+        <footer>
+            <div>
+                <ul>
+                    <a href="">
+                        <li>帮助</li>
+                    </a>
+                    <li>|</li>
+                    <a href="">
+                        <li>隐私条款</li>
+                    </a>
+                    <li>|</li>
+                    <a href="">
+                        <li>使用条款</li>
+                    </a>
+                    <li>|</li>
+                    <a href="">
+                        <li>通知</li>
+                    </a>
+                    <li>|</li>
+                    <a href="">
+                        <li>@NAVER Corp</li>
+                    </a>
+                </ul>
+            </div>
+        </footer>
+    </div>
+
+    <script type="text/javascript" src="js/move.js"></script>
+    <script type="text/javascript" src="js/sidebar.js"></script>
+</body>
+
+</html>

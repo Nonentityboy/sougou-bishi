@@ -1,0 +1,464 @@
+
+ 
+* {
+    font-family: 'Microsoft Yahei';
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    /* Firefox */
+    -webkit-box-sizing: border-box;
+    /* Safari */
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    height: 100%;
+    background: #f0f0f0;
+}
+
+header {
+    position: fixed;
+    height: 80px;
+    width: 100%;
+    background: #00c402;
+    overflow: hidden;
+    color: #fff;
+    z-index: 9999;
+}
+
+header .logo {
+    float: left;
+    width: 240px;
+    height: 75px;
+}
+
+header img {
+    position: absolute;
+    left: 30px;
+    top: 10px;
+}
+
+.search {
+    width: calc(100% - 240px);
+    height: 75px;
+    float: left;
+    position: relative;
+}
+
+.search-container {
+    width: 100%;
+    height: 30px;
+    position: absolute;
+    top: 50%;
+    margin-top: -26px;
+    margin-left: 30px;
+}
+
+header input[type=text] {
+    width: 42%;
+    height: 37px;
+    /*border-radius: 1px;*/
+}
+
+header input[type=image] {
+    width: 35px;
+    height: 36px;
+    position: relative;
+    top: 13px;
+    border: 1px solid #ccc;
+}
+
+header input[alt="Write"] {
+    left: -70px;
+}
+
+header input[alt="Search"] {
+    left: -75px;
+}
+
+.login {
+    height: 35px;
+    width: 50px;
+    position: absolute;
+    top: 26px;
+    right: 20px;
+}
+
+.login a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.login a:hover {
+    color: #ccc;
+}
+
+.login p {
+    border: 1px solid #ccc;
+    text-align: center;
+    vertical-align: middle;
+    padding: 7px;
+}
+
+@media screen and (max-width: 640px) {
+    .search-container {
+        display: none;
+    }
+}
+
+.sidebar {
+    width: 220px;
+    height: 100%;
+    position: fixed;
+    top: 80px;
+    left: 0;
+    background: #fff;
+    border-right: 1px solid #ccc;
+    z-index: 9999;
+    /*margin-left: -200px;*/
+}
+
+.side-button {
+    height: 40px;
+    width: 25px;
+    background: #fff;
+    position: absolute;
+    left: 220px;
+    top: 20px;
+    cursor: pointer;
+    border: 1px solid #ccc;
+    border-left: 0;
+}
+
+.side-button .arrow {
+    width: 0;
+    height: 0;
+    border-right: 6px solid black;
+    border-left: none;
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+.sidebar-top a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: #4d4d4d;
+}
+
+.sidebar-top a:hover {
+    background: #00c402;
+}
+
+.sidebar .sidebar-top {
+    width: 220px;
+    height: 160px;
+    border-bottom: 1px solid #ccc;
+    position: relative;
+}
+
+.sidebar .top-menu {
+    width: 220px;
+    height: 100px;
+    position: absolute;
+    top: 50%;
+    margin-top: -55px;
+}
+
+.sidebar .setting, .aboutus{
+    width: 220px;
+    height: 80px;
+    border-bottom: 1px solid #ccc;
+    position: relative;
+}
+
+.sidebar .message {
+    width: 220px;
+    height: 100px;
+    border-bottom: 1px solid #f0f0f0;
+    position: relative;
+}
+
+.sidebar .middle-menu, .aboutus-menu {
+    width: 220px;
+    position: absolute;
+    top: 20px;
+}
+
+.sidebar .aboutus-menu {
+    position: relative;
+    top: 5px;
+    left: 40px;
+}
+
+.middle-menu .setting-menu {
+    margin-left: 40px;
+}
+
+.middle-menu .set-button {
+    width: 220px;
+    height: 40px;
+    padding: 10px 10px 10px 25px;
+    cursor: pointer;
+}
+
+.setting img {
+    position: relative;
+    left: 130px;
+}
+
+.aboutus img {
+    position: relative;
+    left: 35px;
+}
+
+.sidebar .set, .more {
+    display: none;
+}
+
+.message p {
+    margin-left: 25px;
+}
+
+.message .news {
+    margin-left: 25px;
+    margin-top: 10px;
+}
+
+.message a {
+    font-size: 12px;
+    text-decoration: none;
+    color: #4d4d4d;
+}
+
+.sidebar-bottom {
+    position: absolute;
+    left: 0;
+    bottom: 80px;
+    width: 220px;
+    height: 93px;
+    border-top: 1px solid #d1d1d1;
+    border-right: 1px solid #c2c2c2;
+    background: #fff;
+}
+
+.sidebar-dic {
+    position: absolute;
+    top:10px;
+    left: 25px; 
+}
+
+.sidebar-bottom a {
+    text-decoration: none;
+    color: #4d4d4d;
+    font-size: 12px;
+    padding: 15px;
+}
+
+/*正文*/
+.container {
+    position: absolute;
+    height: 750px;
+    min-width: 1000px;
+    left: 249px;
+    top: 100px;
+    border: 1px solid #d3d3d3;
+    background: #fff;
+}
+
+.l-container {
+    width: 645px;
+    float: left;
+}
+
+.pic-fighting {
+    position: absolute;
+    left: 80px;
+    top: 50px;
+}
+
+.l-container .today-talk {
+    position: absolute;
+    left: 300px;
+    top: 50px;
+}
+
+.l-container .lm-container {
+    height: 260px;
+    width: 640px;
+    position: absolute;
+    top: 225px;
+    left: 50px;
+    border-top: 3px solid #dedede;
+    border-bottom: 3px solid #dedede;
+}
+
+.today-talk p:first-child+p {
+    padding-bottom: 20px;
+}
+
+.today-talk p:first-child {
+    color: #00c402;
+    padding-bottom: 15px;
+}
+
+.today-talk .bigp {
+    font-size: 24px;
+}
+
+.today-talk img {
+    position: relative;
+    left: 195px;
+    top: -62px;
+    cursor: pointer;
+}
+
+.today-talk div {
+    border: 1px solid #ccc;
+    width: 80px;
+    margin-top: 1px;
+    padding: 4px;
+}
+
+.today-talk a {
+    text-decoration: none;
+    text-align: center;
+    color: #00c402;
+}
+
+.today-say {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+}
+
+.today-say p {
+    padding-bottom: 20px;
+}
+
+.today-say p:first-child {
+    color: #aaaaaa;
+}
+
+.today-say .bigp {
+    font-size: 24px;
+}
+
+.today-say img {
+    position: absolute;
+    left: 280px;
+    top: 40px;
+    cursor: pointer;
+}
+
+.today-say div {
+    border: 1px solid #ccc;
+    width: 80px;
+    margin-top: 10px;
+    padding: 4px;
+}
+
+.today-say a {
+    text-decoration: none;
+    text-align: center;
+    color: #ccc;
+}
+
+.data {
+    position: absolute;
+    left: 50px;
+    bottom: 40px;
+    display: inline-block;
+    font-size: 14px;
+}
+
+
+.fb, .tt, .gg {
+    position: absolute;
+    bottom: 35px;
+}
+
+.share {
+    position: absolute;
+    bottom: 40px;
+    left:440px;
+}
+
+.fb {
+    left: 560px;
+}
+
+.tt {
+    left: 595px;
+}
+
+.gg {
+    left: 631px;
+}
+
+.r-container {
+    width: 255px;
+    height: 748px;
+    background: #fafafa;
+    float: right;
+    border-left: 1px solid #ccc;
+}
+
+.pic-line {
+    margin: 6px;
+}
+
+.r-container h5 {
+    margin:6px;
+    padding-top: 10px;
+}
+
+.r-container p {
+    margin: 6px;
+    padding-bottom: 90px;
+    font-size: 14px;
+    color: #515151;
+}
+
+.pic-lined {
+    margin: 8px;
+    border-top: 1px solid #ccc;
+}
+
+footer {
+    position: absolute;
+    bottom: -200px;
+    left: 280px;
+    color: #aaaaaa;
+}
+
+footer div {
+    height: 150px;
+}
+
+
+footer li {
+    display: inline;
+    margin: 6px;
+}
+
+footer a {
+    text-decoration: none;
+    color: #9c9c9c;
+}
+
+
+
